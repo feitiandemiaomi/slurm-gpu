@@ -2,7 +2,7 @@ MAINTAINER Ryan Olson rolson@nvidia.com
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential ruby-dev libpam0g-dev libmysqlclient-dev \
-        libmunge-dev libmysqld-dev wget python-minimal && \
+        libmunge-dev libmysqld-dev wget python-minimal liblua5.2-dev && \
     rm -rf /var/lib/apt/lists/*
 
 RUN gem install fpm
